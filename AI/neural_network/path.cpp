@@ -24,7 +24,7 @@ Path::Path(Neuron* start_neuron, Neuron* end_neuron, int64_t start_weight)
 {
     m_start = start_neuron;
     m_end = end_neuron;
-    m_weight = start_weight
+    m_weight = start_weight;
 }
 
 
@@ -46,7 +46,7 @@ int64_t Path::Weight()
 }
 
 
-void Path:setStart(Neuron* new_start)
+void Path::setStart(Neuron* new_start)
 {
     m_start = new_start;
 }

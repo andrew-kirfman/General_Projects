@@ -7,6 +7,10 @@
 /* ------------------------------------------------------------------------- */
 
 
+#ifndef PATH_H
+#define PATH_H
+
+
 /* ------------------------------------------------------------------------- */
 /* Standard Library Includes                                                 */
 /* ------------------------------------------------------------------------- */
@@ -14,6 +18,7 @@
 #include<stdlib.h>
 #include<cstdint>
 
+class Neuron;
 
 class Path
 {
@@ -21,7 +26,7 @@ public:
     
     /* Constructors */
     Path();
-    Path(Neuron* start_neuron, Neuron* end_neuron, int64_t start_weight)
+    Path(Neuron* start_neuron, Neuron* end_neuron, int64_t start_weight);
 
     /* Getter functions */
     Neuron* Start();
@@ -35,8 +40,11 @@ public:
 
 private:
 
-    /* Class data members */
+    /* Class Data Members */
     Neuron* m_start;
     Neuron* m_end;
     int64_t m_weight;
 };
+
+
+#endif
