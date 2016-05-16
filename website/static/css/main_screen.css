@@ -1,0 +1,14 @@
+* {
+    border: none;
+    outline: none;
+    position: fixed;
+}
+
+.sidebar_box 
+{
+    height: 80%;
+    width: 20%;
+    top: 10%;
+    left: 20%;
+    color: rgb(0, 0, 0);
+}
